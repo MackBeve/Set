@@ -1,13 +1,15 @@
-import static org.junit.Assert.*;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.testng.AssertJUnit.*;
+
 import java.util.*;
 
 public class SetModelTest {
 
 	private SetModel model;
 
-	@Before
+	@BeforeEach
 	public void setUp() {
 		model = new SetModel(false);
 	}

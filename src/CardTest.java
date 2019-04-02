@@ -1,6 +1,7 @@
-import static org.junit.Assert.*;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.testng.AssertJUnit.assertEquals;
 
 public class CardTest {
 	
@@ -9,7 +10,7 @@ public class CardTest {
 	private Card c;
 	private Card d;
 	
-	@Before
+	@BeforeEach
 	public void setUp(){
 		a = new Card(0, 0, 0, 0);
 		b = new Card(1, 1, 1, 1);
